@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Teori Pemrograman Web</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="rapi">
+  <button onclick="toggleMode()" class="mode-button">Ganti Mode Tampilan 🌙</button>
+
+  <div class="container content mt-5">
+    <h2>Laporan Teori Pemrograman Web</h2>
+
+    <h3 onclick="toggleContent('section1')" class="toggle-header">1. Mengapa Menggunakan CSS dan JavaScript dalam Pemrograman Web? <span class="icon">▼</span></h3>
+    <p id="section1" class="toggle-content">
+      • CSS (Cascading Style Sheet) adalah bahasa pemrograman yang digunakan untuk mengatur format HTML, seperti jenis huruf, background, tata letak, ukuran gambar, dan lain–lain. CSS digunakan bersama HTML untuk mengatur gaya dari konten yang terstruktur. CSS membantu membuat tampilan website lebih rapi, terstruktur, interaktif, dan seragam.<br>
+      • JavaScript adalah satu-satunya bahasa web yang dapat membuat situs web lebih menarik dan dinamis, dengan eksekusi yang terjadi di sisi pengguna. HTML digunakan untuk mengatur konten, CSS untuk tata letak, dan JavaScript untuk interaktivitas.
+    </p>
+
+    <h3 onclick="toggleContent('section2')" class="toggle-header">2. Bagaimana CSS dan JavaScript dapat Diintegrasikan dalam Pemrograman Web? <span class="icon">▼</span></h3>
+    <p id="section2" class="toggle-content">
+      • CSS dapat ditambahkan ke halaman HTML dengan tiga cara:<br>
+      1) Menggunakan tag <code>&lt;style&gt;</code> di header halaman<br>
+      2) Menggunakan file eksternal CSS<br>
+      3) Menautkan file stylesheet dengan tag <code>&lt;link&gt;</code> di bagian <code>&lt;head&gt;</code>.<br>
+      • JavaScript dapat ditambahkan dengan tiga cara:<br>
+      1) Menggunakan tag <code>&lt;script&gt;</code> di body halaman<br>
+      2) Menggunakan file eksternal<br>
+      3) Menempatkan JavaScript di akhir badan HTML.
+    </p>
+
+    <h3 onclick="toggleContent('section3')" class="toggle-header">3. Keuntungan Menggunakan JavaScript dan CSS <span class="icon">▼</span></h3>
+    <p id="section3" class="toggle-content">
+      • Keuntungan menggunakan JavaScript:<br>
+      1) Didukung oleh hampir semua browser<br>
+      2) Membuat halaman web menjadi interaktif<br>
+      3) Memvalidasi data yang akan dikirim ke server<br>
+      4) Gratis dan dapat digunakan siapa saja tanpa harus memiliki lisensi<br>
+      5) Tidak membutuhkan alat khusus, cukup teks editor seperti HTML.<br><br>
+      • Keuntungan menggunakan CSS:<br>
+      1) Mempermudah pengformatan halaman web, dapat digunakan berulang kali<br>
+      2) Menghasilkan tampilan konsisten pada seluruh halaman web<br>
+      3) Mampu mengubah tampilan elemen yang tidak dapat diatur oleh HTML standar.
+    </p>
+
+    <h3 onclick="toggleContent('section4')" class="toggle-header">4. Keuntungan Menggunakan Bootstrap <span class="icon">▼</span></h3>
+    <p id="section4" class="toggle-content">
+      1) Browser compatibility: tampilan konsisten di berbagai browser<br>
+      2) Faster Development: menyediakan kode siap pakai untuk berbagai komponen web<br>
+      3) Great Design: standar desain responsif untuk tampilan profesional<br>
+      4) Mudah Dipelajari: cukup dengan menulis beberapa class pada HTML.
+    </p>
+
+    <h3 onclick="toggleContent('section5')" class="toggle-header">5. Contoh Penggunaan Bootstrap <span class="icon">▼</span></h3>
+    <p id="section5" class="toggle-content">
+      Berikut adalah contoh menggunakan Bootstrap untuk membuat tombol:<br><br>
+      <button type="button" class="btn btn-primary">Tombol Utama</button>
+      <button type="button" class="btn btn-success">Tombol Sukses</button>
+      <button type="button" class="btn btn-danger">Tombol Bahaya</button><br><br>
+      Fungsi: Bootstrap mempermudah pembuatan antarmuka yang konsisten dan responsif, tanpa perlu menulis CSS tambahan. Tombol ini langsung memiliki tampilan profesional dan responsif.
+    </p>
+  </div>
+
+  <!-- Link ke Bootstrap JS dan jQuery dari CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
